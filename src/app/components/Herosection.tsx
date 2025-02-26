@@ -10,12 +10,12 @@ const slides = [
   {
     image: "/img133.JPG",
     heading: "Experience the Ancient Healing of Hijama!",
-    paragraph: "Restore your bodys balance with the power of cupping therapy.",
+    paragraph: "If you think wellness is expensive, then how about illness?",
   },
   {
     image: "/banner1.jpeg",
-    heading: "Unlock the Benefits of Holistic Wellness!",
-    paragraph: "Rejuvenate your mind and body with our expert Hijama services.",
+    heading: "Experience the Ancient Healing of Hijama!",
+    paragraph: "If you think wellness is expensive, then how about illness?",
   },
 ];
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
