@@ -33,9 +33,9 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="relative w-full py-10 px-6 md:px-10">
+        <div className="relative w-full py-10 px-2 lg:px-10">
             <Image src="/img144.jpg" alt="Background" fill style={{ objectFit: "cover" }} quality={75} priority className="absolute inset-0 -z-10" />
-            <div className="relative bg-white bg-opacity-70 p-10 md:p-14 rounded-xl shadow-2xl flex flex-col md:flex-row gap-12 items-center">
+            <div className="relative bg-white bg-opacity-70 p-2 lg:p-14 rounded-xl shadow-2xl flex flex-col md:flex-row gap-12 items-center">
                 <div className="md:w-1/2">
                     <h2 className="text-lg md:text-xl font-semibold text-primary mb-4">SOLUTIONS TO YOUR PAIN</h2>
                     <h3 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">Effective pain relief with high-quality, comfortable Hijama services.</h3>
@@ -44,7 +44,7 @@ const ContactForm = () => {
                         <ReactPlayer url="https://youtu.be/8hjUOqhcVd8" width="100%" height="100%" controls light />
                     </div>
                 </div>
-                <div className="md:w-1/2 bg-primary opacity-95 p-10 md:p-12 rounded-xl shadow-lg w-full">
+                <div className="md:w-1/2 bg-primary opacity-95 p-2 md:p-12 rounded-xl shadow-lg w-full">
                     <h2 className="text-lg md:text-xl font-semibold text-primary mb-4">GET IN TOUCH</h2>
                     <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Get Appointment</h3>
                     <form onSubmit={handleSubmit} className="grid gap-6">
@@ -60,7 +60,7 @@ const ContactForm = () => {
                         ))}
                         <textarea name="comments" placeholder="Write Comments" value={formData.comments} onChange={handleChange}
                             className="p-4 border rounded-lg h-32 w-full text-lg focus:ring-2 focus:ring-green-500"></textarea>
-                        <button type="submit" className="bg-hovershed text-white p-4 rounded-lg hover:bg-white text-lg font-semibold w-full transition duration-300 border hover:border-hovershed hover:text-hovershed">
+                        <button type="submit" className="bg-primary text-white p-4 rounded-lg hover:bg-white text-lg font-semibold w-full transition duration-300 border hover:border-primary hover:text-primary">
                             SUBMIT NOW
                         </button>
                     </form>

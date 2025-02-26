@@ -20,7 +20,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`sticky top-0 z-50 backdrop-blur-md bg-white/90 shadow-md transition-all duration-300 ${isScrolled ? "py-3" : "py-4"}`}>
+        <header className={`sticky -top-1 z-50 backdrop-blur-md bg-white/90 shadow-md transition-all duration-300 ${isScrolled ? "py-3" : "py-4"}`}>
             <div className="container mx-auto flex justify-between items-center px-6 md:px-12 transition-all duration-300 py-2">
 
                 {/* Logo */}
@@ -84,8 +84,8 @@ const Header = () => {
                     <Link href="/about" className="block py-2 hover:text-primary">About</Link>
                     <Link href="/services" className="block py-2 hover:text-primary">Services</Link>
                     <Link href="/pages" className="block py-2 hover:text-primary">Pages</Link>
-                    <Link href="/contact" className="block py-2 hover:text-primary">Contact Us</Link>
-                    <Link href="/appointment" className="block mt-2 bg-primary text-white text-center py-2 rounded-full border border-hovershed hover:bg-white hover:text-hovershed">
+                    <Link href="/contact" className="block pyf-2 hover:text-primary">Contact Us</Link>
+                    <Link href="/appointment" className="block mt-2 bg-primary text-white text-center py-2 rounded-full border border-primary hover:bg-white hover:text-primary">
                         Book Appointment
                     </Link>
                 </div>

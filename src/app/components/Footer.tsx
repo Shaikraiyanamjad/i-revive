@@ -9,7 +9,7 @@ import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
 const Footer = () => {
     return (
         <footer className="bg-blackone text-gray-300">
-            <div className="container mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12 items-start pt-10">
+            <div className="container mx-auto px-10 grid grid-cols-1 lg:grid-cols-4 gap-12 items-start pt-10">
                 
                 {/* Logo and Quote */}
                 <div className="flex flex-col items-start">

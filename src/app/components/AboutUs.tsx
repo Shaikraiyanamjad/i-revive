@@ -20,7 +20,7 @@ const AboutUs = () => {
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-snug font-serif text-left">
                         About <span className="text-primary">Us</span>
                     </h2>
-                    <h2 className="mt-6 text-2xl sm:text-3xl md:text-5xl text-gray-800 leading-loose text-left">
+                    <h2 className="mt-6 text-2xl md:text-3xl lg:text-5xl text-gray-800 leading-loose text-left">
                        Best Hijama Centre in Hyderabad
                     </h2>
                     <p className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-600 leading-loose text-left">      

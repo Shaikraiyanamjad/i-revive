@@ -18,7 +18,7 @@ export default function OurTeam() {
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1300: { slidesPerView: 3},
           }}
           pagination={{ clickable: true }}
           navigation={true}
@@ -47,7 +47,7 @@ export default function OurTeam() {
                   <p className="text-md text-gray-500">{member.occupation}</p>
                 )}
 
-                <p className="text-sm md:text-base text-gray-500 mt-2">{member.description}</p>
+                {/* <p className="text-sm md:text-base text-gray-500 mt-2">{member.description}</p> */}
               </div>
             </SwiperSlide>
           ))}

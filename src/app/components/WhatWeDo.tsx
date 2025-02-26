@@ -68,7 +68,7 @@ const WhatWeDo = () => {
             </p>
 
             {/* Grid Section */}
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                 {services.map((service, index) => (
                     <div key={index} className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition-all duration-500">
                         {/* Image Section with Hover Zoom */}

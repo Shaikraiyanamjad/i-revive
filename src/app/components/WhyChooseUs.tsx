@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary tracking-widest uppercase">
                     Why Choose Us
                 </h3>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug mt-2 font-serif">
+                <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-snug mt-2 font-serif">
                     Why Choose Us? Reclaim Your <br className="hidden md:block" /> Health and Vitality.
                 </h2>
                 <p className="mt-4 text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
                 {/* Feature Cards */}
                 {[
                     {
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
                     }
                 ].map((feature, index) => (
                     <div key={index}
-                        className="relative overflow-hidden border border-green-400 rounded-xl p-8 flex flex-col items-center text-center shadow-sm transition group">
+                        className="relative overflow-hidden border border-green-400 rounded-xl p-8 flex flex-col items-center text-left shadow-sm transition group">
 
                         {/* Background overlay animation */}
                         <div className="absolute inset-0 bg-green-400/20 w-0 h-full left-0 top-0 transition-all duration-500 ease-in-out group-hover:w-full"></div>

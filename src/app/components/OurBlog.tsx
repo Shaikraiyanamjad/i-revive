@@ -7,11 +7,11 @@ const OurBlog = () => {
     return (
         <section className="px-6 md:px-16 py-16 bg-white text-center">
             <h2 className="text-primary text-2xl font-serif font-bold">OUR BLOG</h2>
-            <h1 className="text-6xl font-bold text-gray-900 mt-2 font-serif">Excellent Facility and High <br />Quality Therapy</h1>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 font-serif">Excellent Facility and High <br />Quality Therapy</h1>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
                 Stay informed and inspired with our blog, where we share expert insights, wellness tips, and the latest trends in Hijama therapy. Explore topics to support your journey toward better health and well-being.
             </p>
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {blogPosts.map((post) => (
                     <div key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden border border-hovershed">
                         <Image src={post.image} width={400} height={250} alt={post.title} className="w-full h-48 object-cover" />

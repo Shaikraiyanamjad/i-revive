@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --swiper-theme-color: #99b760;
+    /* Sets Swiper's default color */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +20,25 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --swiper-theme-color: #99b760;
+  /* Applies to navigation arrows */
+}
+
+.swiper-pagination-bullet {
+  background-color: #99b760 !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #99b760 !important;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #99b760 !important;
+  /* Custom color for navigation arrows */
 }
