@@ -39,8 +39,8 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden sm:flex md:hidden lg:flex items-center space-x-6 text-gray-800 transition-all duration-300">
-            <nav className="hidden md:flex space-x-6 lg:flex text-base">
+          <div className="hidden sm:flex md:hidden xl:flex items-center space-x-6 text-gray-800 transition-all duration-300">
+            <nav className="hidden xl:flex space-x-6 text-base">
               <Link href="/" className="text-primary">
                 HOME
               </Link>
@@ -78,7 +78,7 @@ const Header = () => {
 
           {/* Mobile Menu Button - Always visible on sm & md */}
           <button
-            className="sm:flex md:flex lg:hidden text-gray-800"
+            className="flex xl:hidden text-gray-800"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -87,33 +87,33 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-md absolute top-16 left-0 w-full py-4 px-6 z-40">
+          <div className="xl:hidden bg-white shadow-md absolute top-20 left-0 h-[47vh] w-full py-4 px-6 z-40">
             <Link href="/" className="block py-2 hover:text-primary">
-              Home
-            </Link>
-            <Link href="/" className="block py-2 hover:text-primary">
-              About US
+              HOME
             </Link>
             <Link href="/" className="block py-2 hover:text-primary">
-              treatment plans
+              ABOUT US
             </Link>
             <Link href="/" className="block py-2 hover:text-primary">
-              Faq
+              TREATMENT PLANS
             </Link>
-            <Link href="/" className="block pyf-2 hover:text-primary">
-              Blog
+            <Link href="/" className="block py-2 hover:text-primary">
+              FAQ
             </Link>
-            <Link href="/" className="block pyf-2 hover:text-primary">
-              Contact US
+            <Link href="/" className="block py-2 hover:text-primary">
+              BLOG
             </Link>
-            <Link href="/" className="block pyf-2 hover:text-primary">
-              Courses
+            <Link href="/" className="block py-2 hover:text-primary">
+              CONTACT US
+            </Link>
+            <Link href="/" className="block py-2 hover:text-primary">
+              COURSES
             </Link>
             <Link
               href="/"
               className="block mt-2 bg-primary text-white text-center py-2 rounded-full border border-primary hover:bg-white hover:text-primary"
             >
-              Book Appointment
+              BOOK APPOINTMENT
             </Link>
           </div>
         )}

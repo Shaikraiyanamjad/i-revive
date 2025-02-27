@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
@@ -29,17 +29,15 @@ const Footer = () => {
               If you think wellness is expensive, then how about illness?
             </p>
             <div className="flex gap-3 mt-6">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter].map(
-                (Icon, idx) => (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="bg-primary p-3 rounded-full text-white hover:bg-hovershed transition-all"
-                  >
-                    <Icon size={20} />
-                  </a>
-                )
-              )}
+              {[FaFacebookF, FaInstagram, FaXTwitter].map((Icon, idx) => (
+                <a
+                  key={idx}
+                  href="#"
+                  className="bg-primary p-3 rounded-full text-white hover:bg-hovershed transition-all"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -95,15 +93,20 @@ const Footer = () => {
               Contact Info
             </h3>
             <ul className="space-y-4 text-lg">
+              <li className="flex gap-2 transition-all duration-300">
+      <MdLocationOn className="text-primary mt-1 flex-shrink-0" size={22} />
+      <span className="leading-tight">
+        6th floor, Mawin Zamzam, opposite Prince Hotel, Mehdipatnam,  
+        Hyderabad, Telangana 500028, India
+      </span>
+    </li>
               <li className="flex items-center gap-2 transition-all duration-300 hover:tracking-wider">
-                <MdLocationOn className="text-primary" size={22} /> Hyderabad,
-                India
+                <MdMail className="text-primary" size={22} />
+                <Link href="mailto:info@irevive.com">info@irevive.com</Link>
               </li>
               <li className="flex items-center gap-2 transition-all duration-300 hover:tracking-wider">
-                <MdMail className="text-primary" size={22} /> info@irevive.com
-              </li>
-              <li className="flex items-center gap-2 transition-all duration-300 hover:tracking-wider">
-                <MdPhone className="text-primary" size={22} /> +91-8009944335
+                <MdPhone className="text-primary" size={22} />
+                <Link href="tel:+918009944335">800-9944-335</Link>
               </li>
             </ul>
           </div>
@@ -111,7 +114,18 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="bg-blackshed mt-12 py-4 text-center text-gray-400 flex justify-between items-center px-10">
-          <p className="text-lg">&copy; i-REVIVE, All rights reserved.</p>
+          <p className="text-lg">
+            &copy; 2025{" "}
+            <Link
+              href="https://www.i-revive.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-hovershed"
+            >
+              i-REVIVE
+            </Link>
+            , All rights reserved.
+          </p>
         </div>
       </footer>
     );

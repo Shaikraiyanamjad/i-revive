@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "#99b760",
         blackshed: "#2e2d2d",
-        hovershed: "#99b760",
+        hovershed: "#99b760E6",
         blackone: "#414040",
         gridimg: "#49ad6780",
         gridinfo: "#1b382480"

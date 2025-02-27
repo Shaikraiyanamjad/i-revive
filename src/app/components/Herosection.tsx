@@ -75,7 +75,7 @@ const HeroSection = () => {
           {slides[index].paragraph}
         </p>
 
-        <Link href="/appointment">
+        <Link href="/">
           <button className="bg-primary text-white px-6 py-3 rounded-full text-[clamp(1rem, 2vw, 1.5rem)] hover:bg-white hover:text-hovershed border border-hovershed hover:border-hovershed transition">
             Book Appointment
           </button>

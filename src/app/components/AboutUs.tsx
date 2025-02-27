@@ -23,7 +23,7 @@ const AboutUs = () => {
                     <h2 className="mt-6 text-2xl md:text-3xl lg:text-5xl text-gray-800 leading-loose text-left">
                        Best Hijama Centre in Hyderabad
                     </h2>
-                    <p className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-600 leading-loose text-left">      
+                    <p className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-600 leading-loose text-left md:text-justify">      
                     Welcome to i-Revive. At i-Revive, we offer a targeted range of Hijama Cupping-based wellness plans coupled with the indispensable goodness of Gliding Cupping & Deep Tissue Stroking under the most hygienic setups while fully honouring the individual&apos;s privacy. 
                     </p>
                     <div className="mt-8 flex justify-start">
