@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="bg-blackshed mt-12 py-4 text-center text-gray-400 flex justify-between items-center px-10">
+        <div className="bg-blackshed mt-12 py-4 text-center text-gray-400 flex justify-center items-center px-10">
           <p className="text-lg">
             &copy; 2025{" "}
             <Link
