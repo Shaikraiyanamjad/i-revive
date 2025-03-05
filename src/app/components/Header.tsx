@@ -36,11 +36,11 @@ const Header = () => {
         <div className="hidden sm:flex md:hidden xl:flex items-center space-x-6 text-gray-800">
           <nav className="hidden xl:flex space-x-6 text-base">
             <Link href="/">HOME</Link>
-            <Link href="/aboutus">ABOUT US</Link>
-            <Link href="/treatmentplans">TREATMENT PLANS</Link>
+            <Link href="/about-us">ABOUT US</Link>
+            <Link href="/treatment-plans">TREATMENT PLANS</Link>
             <Link href="/faq">FAQ</Link>
             <Link href="/blog">BLOG</Link>
-            <Link href="/contactus" className="hidden md:inline-block">
+            <Link href="/contact-us" className="hidden md:inline-block">
               CONTACT US
             </Link>
             <div className="relative">
@@ -113,10 +113,10 @@ const Header = () => {
           <Link href="/" className="block hover:text-primary">
             HOME
           </Link>
-          <Link href="/aboutus" className="block hover:text-primary">
+          <Link href="/about-us" className="block hover:text-primary">
             ABOUT US
           </Link>
-          <Link href="/treatmentplans" className="block hover:text-primary">
+          <Link href="/treatment-plans" className="block hover:text-primary">
             TREATMENT PLANS
           </Link>
           <Link href="/faq" className="block hover:text-primary">
@@ -125,7 +125,7 @@ const Header = () => {
           <Link href="/blog" className="block hover:text-primary">
             BLOG
           </Link>
-          <Link href="/contactus" className="block hover:text-primary">
+          <Link href="/contact-us" className="block hover:text-primary">
             CONTACT US
           </Link>
           <button
