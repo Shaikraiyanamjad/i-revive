@@ -1,7 +1,6 @@
-import React from 'react'
-import Header from '../components/Header'
-import BookAppointment from '../components/BookAppointment'
-import Footer from '../components/Footer'
+import Header from "../components/Header"
+import BookAppointment from "../components/BookAppointment"
+import Footer from "../components/Footer"
 const page = () => {
   return (
     <div>
