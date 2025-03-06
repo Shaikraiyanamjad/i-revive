@@ -6,7 +6,7 @@ import { FaUserMd, FaBriefcaseMedical, FaHeartbeat, FaUsers } from "react-icons/
 const WhyChooseUs = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 150 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
