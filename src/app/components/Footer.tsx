@@ -24,6 +24,7 @@ const Footer = () => {
                   priority
                 />
               </div>
+              
             </Link>
             <p className="mt-4 text-lg leading-relaxed max-w-xs">
               If you think wellness is expensive, then how about illness?
