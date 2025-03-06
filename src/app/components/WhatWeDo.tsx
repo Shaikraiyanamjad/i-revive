@@ -100,7 +100,7 @@ const WhatWeDo = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition-all duration-500"
+            className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition-all duration-500 dark:text-black"
           >
             <div className="relative h-56 overflow-hidden">
               <Image
@@ -113,7 +113,7 @@ const WhatWeDo = () => {
             </div>
 
             <div className="relative bg-white p-6 overflow-hidden min-h-[220px] flex flex-col justify-between">
-              <div>
+              <div className="text-black">
                 <h3 className="text-2xl text-left font-semibold font-serif">
                   {service.title}
                 </h3>
