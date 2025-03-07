@@ -48,9 +48,9 @@ const HeroSection = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ y: "-100%", opacity: 0 }} // Start from above
+          animate={{ y: "0%", opacity: 1 }} // Slide to position
+          exit={{ y: "100%", opacity: 0 }} // Move down on exit
           transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute inset-0"
         >
