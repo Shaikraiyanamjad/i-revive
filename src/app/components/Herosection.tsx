@@ -51,7 +51,7 @@ const HeroSection = () => {
           initial={{ y: "-100%", opacity: 0 }} // Start from above
           animate={{ y: "0%", opacity: 1 }} // Slide to position
           exit={{ y: "100%", opacity: 0 }} // Move down on exit
-          transition={{ duration: 0.7, ease: "easeInOut" }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
