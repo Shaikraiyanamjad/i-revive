@@ -8,8 +8,8 @@ const AboutUs = () => {
       <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-12">
         {/* Left Side - Image Animation */}
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="w-full md:w-1/2"
@@ -25,8 +25,8 @@ const AboutUs = () => {
 
         {/* Right Side - Content Animation */}
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="w-full md:w-1/2"

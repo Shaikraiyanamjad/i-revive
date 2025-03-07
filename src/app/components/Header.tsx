@@ -110,7 +110,7 @@ const Header = () => {
             priority
           />
         </div>
-        <nav className="mt-6 space-y-4">
+        <nav className="mt-6 space-y-4 text-black">
           <Link href="/" className="block hover:text-primary">
             HOME
           </Link>
