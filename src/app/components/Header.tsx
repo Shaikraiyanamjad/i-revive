@@ -18,11 +18,11 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white shadow-md transition-all duration-300 ${
+      className={`bg-white shadow-md transition-all duration-300 ${
         isScrolled ? "py-3" : "py-4"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-6 md:px-12 py-2">
+      <div className="container mx-auto flex justify-between items-center px-6 md:px-12">
         <Link href="/">
           <Image
             src="/i-revive-logo.avif"
@@ -30,7 +30,7 @@ const Header = () => {
             width={isScrolled ? 250 : 300}
             height={isScrolled ? 80 : 100}
             priority
-            className="transition-all duration-300 max-w-[180px] md:max-w-[200px] h-auto"
+            className="transition-all duration-300 max-w-[180px] md:max-w-[170px] h-auto"
           />
         </Link>
         <div className="hidden sm:flex md:hidden xl:flex items-center space-x-6 text-gray-800">
@@ -77,7 +77,7 @@ const Header = () => {
           </nav>
           <Link
             href="/book-appointment"
-            className="bg-primary text-white px-7 py-4 rounded-full border border-hovershed hover:bg-white hover:text-hovershed hidden lg:inline-block"
+            className="bg-primary text-white px-7 py-3 rounded-full border border-hovershed hover:bg-white hover:text-hovershed hidden lg:inline-block"
           >
             Book Appointment
           </Link>
@@ -100,12 +100,13 @@ const Header = () => {
         >
           <X size={28} />
         </button>
-        <div className="flex justify-center mt-4">
+        <div className="flex mt-4">
           <Image
             src="/i-revive-logo.avif"
             alt="i-REVIVE Logo"
             width={200}
             height={60}
+            className="w-[70%] mb-6"
             priority
           />
         </div>

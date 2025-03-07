@@ -12,7 +12,7 @@ const OurBlog = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <section className="px-6 md:px-16 py-16 bg-white text-center">
+    <section className="px-6 md:px-16 py-6 lg:py-16 bg-white text-center">
       <h2 className="text-primary text-2xl font-serif font-bold">OUR BLOG</h2>
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-2 font-serif">
         Excellent Facility and High <br />

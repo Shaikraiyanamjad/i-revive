@@ -21,6 +21,9 @@ export default {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
       },
+      boxShadow: {
+        "custom-shadow": "0 0 45px rgba(0, 0, 0, .2)", // Adjust values as needed
+      },
     },
   },
   plugins: [],

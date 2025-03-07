@@ -59,7 +59,7 @@ const ContactForm = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative bg-white bg-opacity-70 p-6 lg:p-14 rounded-xl shadow-2xl flex flex-col md:flex-row gap-12 items-center md:backdrop-blur-lg"
+        className="relative bg-white bg-opacity-70 p-6 px-3 lg:p-14 rounded-xl shadow-2xl flex flex-col md:flex-row gap-12 items-center md:backdrop-blur-lg"
       >
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -105,9 +105,9 @@ const ContactForm = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="md:w-1/2 bg-primary opacity-95 p-6 md:p-12 rounded-xl shadow-lg w-full"
+          className="md:w-1/2 bg-primary opacity-95 p-6 px-3 md:p-12 rounded-xl shadow-lg w-full"
         >
-          <h2 className="text-xl font-semibold text-primary mb-4">
+          <h2 className="text-md font-normal text-gray-900">
             GET IN TOUCH
           </h2>
           <h3 className="text-3xl font-bold mb-6 text-gray-900">
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
                   value={formData[name as keyof typeof formData]}
                   onChange={handleChange}
-                  className="p-4 border rounded-lg w-full text-lg focus:ring-2 focus:ring-green-500"
+                  className="p-4 py-2 border rounded-lg w-full text-lg focus:ring-2 focus:ring-green-500"
                 />
                 {errors[name] && (
                   <p className="text-red-600 text-sm">{errors[name]}</p>

@@ -2,11 +2,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
 const AboutUs = () => {
   return (
-    <section className="py-12 md:py-16 px-6 md:px-20 bg-white">
-      <div className="flex flex-col md:flex-row items-center gap-12">
+    <section className="py-6 lg:py-12 md:py-16 px-6 md:px-20 bg-white">
+      <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-12">
         {/* Left Side - Image Animation */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -35,7 +34,7 @@ const AboutUs = () => {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-snug font-serif text-left">
             About <span className="text-primary">Us</span>
           </h2>
-          <h2 className="mt-6 text-2xl md:text-3xl lg:text-5xl text-gray-800 leading-loose text-left">
+          <h2 className="mt-2 text-2xl md:text-3xl lg:text-5xl text-gray-800 text-left">
             Best Hijama Centre in Hyderabad
           </h2>
           <p className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-600 leading-loose text-left md:text-justify">
