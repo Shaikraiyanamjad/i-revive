@@ -52,7 +52,7 @@ const Header = () => {
                 <ChevronDown size={16} />
               </button>
               {isCoursesOpen && (
-                <div className="absolute mt-2 bg-white shadow-lg rounded-lg py-2 w-40">
+                <div className="absolute mt-2 bg-white shadow-lg rounded-lg py-2 w-40 z-30">
                   <Link
                     href="/"
                     className="block px-4 py-2 hover:bg-gray-100"

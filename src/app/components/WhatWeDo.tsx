@@ -33,16 +33,15 @@ const WhatWeDo = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "linear" }}
             viewport={{ once: true }}
-            className="relative flex flex-col group cursor-pointer rounded-lg overflow-hidden shadow-custom-shadow transition-all duration-500 dark:text-black border-b-8 border-primary"
+            className="relative flex flex-col group cursor-pointer rounded-lg overflow-hidden shadow-custom-shadow transition-all duration-500 dark:text-black border-b-8 border-primary card-container"
           >
+            {/* Pseudo-elements for sliding overlays */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="overlay-top"></div>
+              <div className="overlay-bottom"></div>
+            </div>
+
             <div className="relative h-56 overflow-hidden">
-              <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
-              <motion.div
-                initial={{ y: "-100%" }}
-                whileHover={{ y: "0%" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="absolute inset-0 bg-primary opacity-50"
-              ></motion.div>
               <Image
                 src={service.image}
                 alt={service.title}
@@ -53,32 +52,25 @@ const WhatWeDo = () => {
             </div>
 
             <div className="relative bg-white text-black p-6 overflow-hidden flex flex-col flex-1 justify-between">
-              <motion.div
-                initial={{ y: "100%" }}
-                whileHover={{ y: "0%" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="absolute inset-0 bg-primary opacity-50"
-              ></motion.div>
-              <h3 className="text-xl text-left font-semibold font-serif relative z-10">
+              <h3 className="text-xl text-left font-semibold font-serif relative z-10 transition-colors duration-300 group-hover:text-white">
                 {service.title}
               </h3>
-              <p className="mt-3 text-base text-left flex-1 relative z-10">
+              <p className="mt-3 text-base text-left flex-1 relative z-10 group-hover:text-white">
                 {service.description}
               </p>
-              <button
-                className="mt-4 bg-primary text-white py-3 px-5 rounded-full hover:bg-white hover:text-hovershed border hover:border-hovershed transition relative z-10"
-              >
+              <button className="mt-4 bg-primary text-white py-3 px-5 rounded-full hover:bg-white hover:text-hovershed border hover:border-hovershed transition relative z-10 hover:text-primary">
                 Read More
               </button>
             </div>
           </motion.div>
+
+
+
         ))}
       </div>
 
       <div className="mt-12 flex justify-center">
-        <button
-          className="bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-white border hover:border-hovershed hover:text-hovershed transition"
-        >
+        <button className="bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-white border hover:border-hovershed hover:text-hovershed transition">
           More Services
         </button>
       </div>

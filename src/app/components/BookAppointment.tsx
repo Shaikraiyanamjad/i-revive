@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface DoctorSectionProps {
@@ -7,17 +7,30 @@ interface DoctorSectionProps {
   altText: string;
 }
 
-const DoctorSection: React.FC<DoctorSectionProps> = ({
-  doctorType,
-  altText,
-}) => {
+const DoctorSection: React.FC<DoctorSectionProps> = ({ doctorType, altText }) => {
+  const timeSlots = ["9:30 AM", "9:45 AM", "10:00 AM", "10:15 AM", "10:30 AM", "10:45 AM", "11:00 AM", "11:15 AM", "11:30 AM", "11:45 AM", "12:00 PM", "12:15 PM", "12:30 PM", "12:45 PM", "1:00 PM", "1:15 PM", "1:30 PM", "1:45 PM", "2:00 PM", "2:15 PM", "2:30 PM", "2:45 PM", "3:00 PM", "3:15 PM", "3:30 PM", "3:45 PM", "4:00 PM", "4:15 PM", "4:30 PM", "4:45 PM", "5:00 PM", "5:15 PM", "5:30 PM", "5:45 PM"];
+
+
+  const [hydrated, setHydrated] = useState(false);
   const [selectedDate, setSelectedDate] = useState<string>("");
-  const [selectedTime, setSelectedTime] = useState<string>("");
+  const [selectedTime, setSelectedTime] = useState<string>(timeSlots[0]); // Default to first time slot
   const [phone, setPhone] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [dob, setDob] = useState<string>("");
   const [age, setAge] = useState<string>("");
-  const timeSlots = ["10:00 AM", "11:00 AM", "02:00 PM", "04:00 PM"];
+
+  // Ensure consistent rendering between SSR and client
+  useEffect(() => {
+    const today = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+    setSelectedDate(today);
+    setDob(today);
+    setHydrated(true);
+  }, []);
+
+  // Prevent SSR mismatch by delaying render until client hydration
+  if (!hydrated) {
+    return <div className="border rounded-lg p-4 shadow-md h-48 animate-pulse bg-gray-100" />;
+  }
 
   return (
     <div className="border rounded-lg p-4 shadow-md">
@@ -29,7 +42,7 @@ const DoctorSection: React.FC<DoctorSectionProps> = ({
         className="w-32 h-32 object-cover rounded mb-4 mx-auto"
       />
       <h2 className="text-xl font-semibold mb-4 text-center">
-        Book Appointment ({doctorType} Doctor)
+        CHP ({doctorType})
       </h2>
       <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
@@ -110,7 +123,7 @@ const BookAppointment: React.FC = () => {
         Book Your Appointment
       </h1>
       <p className="text-gray-600 mb-6 text-center">
-        Choose your preferred doctor, select a date and time, and provide your
+        Choose your preferred CHP, select a date and time, and provide your
         contact details to schedule an appointment.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

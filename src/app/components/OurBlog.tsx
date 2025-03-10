@@ -34,11 +34,15 @@ const OurBlog = () => {
           >
             <Image
               src={post.image}
-              width={400}
-              height={250}
+              width={450}  // Increased width slightly
+              height={320} // Increased height more
               alt={post.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-64" // Increased Tailwind height
+              style={{ objectFit: "fill" }}
             />
+
+
+
             <div className="p-4">
               <p className="text-primary text-sm flex justify-between">
                 <span className="flex items-center">

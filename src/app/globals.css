@@ -42,3 +42,46 @@ body {
   color: #99b760 !important;
   /* Custom color for navigation arrows */
 }
+/* Main card container */
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pseudo-elements for sliding overlays */
+.card-container .overlay-top,
+.card-container .overlay-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: rgba(66, 66, 66, 0.9);
+  /* Grey background with opacity */
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+  /* Prevents blocking hover effects */
+}
+
+/* Top overlay (slides down) */
+.card-container .overlay-top {
+  top: 0;
+  z-index: 20;
+  transform: translateY(-100%);
+  background-color: #99b76080;
+}
+
+/* Bottom overlay (slides up) */
+.card-container .overlay-bottom {
+  bottom: 0;
+  z-index: 10;
+  transform: translateY(100%);
+}
+
+/* Hover effect to slide the overlays to 50% height */
+.card-container:hover .overlay-top {
+  transform: translateY(0);
+}
+
+.card-container:hover .overlay-bottom {
+  transform: translateY(0);
+}
